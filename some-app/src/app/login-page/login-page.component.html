@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="row">
+      <div class="col">
+        <button class="btn btn-info">Home</button>
+      </div>
+      <div class="col">
+        <button class="btn-btn-info">Features</button>
+      </div>
+      <div class="col">
+        <button class="btn-btn-info">Sign Up!</button>
+      </div>
+    </div>
+  </div>
+<div class="container-sm">
+    <div class="d-flex justify-content-start">
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="name" class="form-control" id="exampleName" aria-describedby="name" [(ngModel)]="username" name="username">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" [(ngModel)]="password" name="password">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary" (click)="doLogin()">Submit</button>
+        </form>
+    </div>
+</div>
+
