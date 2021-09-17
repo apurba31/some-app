@@ -1,13 +1,22 @@
 <div class="container">
-    <div class="row">
-      <div class="col">
-        <button class="btn btn-info">Home</button>
+    <div class="row justify-content-md-center">
+      <div class="col col-md-2">
+        <button class="btn btn-dark" class=".button-style">Home</button>
       </div>
-      <div class="col">
-        <button class="btn-btn-info">Features</button>
+      <div class="col col-lg-2">
+        <button class="btn btn-dark">Features</button>
       </div>
-      <div class="col">
-        <button class="btn-btn-info">Sign Up!</button>
+      <div class="col col-lg-2">
+        <button class="btn btn-info">Sign Up!</button>
+      </div>
+      <div class="col col-lg-2">
+        <button class="btn btn-primary">Reports</button>
+      </div>
+      <div class="col col-lg-2">
+        <button class="btn btn-primary">Jobs</button>
+      </div>
+      <div class="col col-lg-2">
+        <button class="btn btn-primary">Adm=in</button>
       </div>
     </div>
   </div>
@@ -30,5 +39,22 @@
             <button type="submit" class="btn btn-primary" (click)="doLogin()">Submit</button>
         </form>
     </div>
+    <br>
+    <button class="btn btn-primary" (click)="toggleShow()">Click</button>
+    <div *ngIf="show"> 
+        <p>Toggle!</p>
+    </div>
+    <div class="container">
+      <div class="d-flex justify-content-end">
+        <button class="btn btn-secondary">Route To</button>
+      </div>
+      <div class="row">
+        <div class="col col-lg-2">
+          <a [routerLink]= "['/homePage']">Home Page</a>
+      </div>
+      </div>
+    </div>
+    
 </div>
+<!-- <home-page (showAlert)="checkOutput($event)"></home-page> -->
 
