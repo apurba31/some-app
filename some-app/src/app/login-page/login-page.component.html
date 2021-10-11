@@ -16,7 +16,7 @@
         <button class="btn btn-primary">Jobs</button>
       </div>
       <div class="col col-lg-2">
-        <button class="btn btn-primary">Adm=in</button>
+        <button class="btn btn-primary">Admin</button>
       </div>
     </div>
   </div>
@@ -54,7 +54,22 @@
       </div>
       </div>
     </div>
-    
+    <div class='table-responsive'>
+      <table class='table'>
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Model</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor='let g of guitar'>
+            <td>{{ g.company }}</td>
+            <td>{{ g.model }}</td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
 </div>
 <!-- <home-page (showAlert)="checkOutput($event)"></home-page> -->
 
